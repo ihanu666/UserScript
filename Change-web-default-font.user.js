@@ -2,7 +2,7 @@
 // @name         修改网页默认字体
 // @namespace    https://steamcommunity.com/id/ihan_u_
 // @version      1.0
-// @description  HarmonyOS Sans SC（鸿蒙黑体）
+// @description  使用 HarmonyOS Sans SC（鸿蒙黑体）作为默认字体
 // @author       ihan_u_
 // @match        *://*/*
 // @exclude      https://github.com/*/blob/*
@@ -14,4 +14,7 @@
 // @homepageURL  https://steamcommunity.com/id/ihan_u_
 // ==/UserScript==
 
-GM_addStyle(`div,h1,h2,h3,h4,h5,h6,p,button,input,textarea,.markdown-body,.menuitem {font-family: "HarmonyOS Sans SC", "Microsoft YaHei UI" !important;}`)
+GM_addStyle(`
+    div,h1,h2,h3,h4,h5,h6,p,button,input,textarea,.markdown-body,.menuitem 
+    {font-family: "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei UI", ui-sans-serif, system-ui, "Segoe UI Emoji", "Segoe UI Symbol" !important;}
+    `)
