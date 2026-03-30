@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         修改网页默认字体
+// @name         修改网页字体
 // @namespace    https://steamcommunity.com/id/ihan_u_
 // @version      1.1.0
-// @description  使用 HarmonyOS Sans SC（鸿蒙黑体）作为默认字体
+// @description  使用 HarmonyOS Sans SC (鸿蒙黑体) 作为网页字体
 // @author       ihan_u_
 // @match        *://*/*
 // @exclude      https://github.com/*/blob/*
