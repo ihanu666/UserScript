@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         修改网页字体
-// @namespace    https://steamcommunity.com/id/ihan_u_
+// @namespace    https://github.com/ihanu666/UserScript/blob/main/Change-web-font.user.js
 // @version      1.1.0
 // @description  使用 HarmonyOS Sans SC (鸿蒙黑体) 作为网页字体
 // @author       ihan_u_
@@ -10,14 +10,13 @@
 // @grant        GM_addStyle
 // @license      MIT
 // @run-at       document-start
-// @supportURL   https://steamcommunity.com/id/ihan_u_
 // @homepageURL  https://steamcommunity.com/id/ihan_u_
 // ==/UserScript==
 
 (function() {
     var style = document.createElement('style');
     style.type = 'text/css';
-    style.innerHTML='*:not([class*="icon"]):not([class*="stonefont"]):not(i):not(.favorite):not(.fa-regular){font-family:"HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;}';
+    style.innerHTML='*:not([class*="icon"]):not([class*="stonefont"]):not([class*="topbar-logo"]):not([type*="submit"]):not(i):not(.favorite):not(.fa-regular){font-family:"HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;}';
     //document.getElementsByTagName('HEAD').item(0).appendChild(style);
     document.documentElement.appendChild(style);
 })();
