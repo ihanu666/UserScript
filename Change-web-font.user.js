@@ -16,7 +16,7 @@
 (function() {
     var style = document.createElement('style');
     style.type = 'text/css';
-    style.innerHTML='*:not([style*="font-family"]):not([class*="icon"]):not([class*="ico"]):not([class*="stonefont"]):not([class*="topbar-logo"]):not([class*="ifont"]):not([type*="submit"]):not(i):not(.favorite):not(.fa-regular){font-family:"HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;}';
+    style.innerHTML='*:not([class*="ico"]):not([class*="stonefont"]):not([class*="ifont"]):not([class*="subscriptions"]):not([class*="logo"]):not([type*="submit"]):not([role*="presentation"]):not([role*="button"]):not(i):not(.favorite):not(.fa-regular){font-family:"HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;}';
     //document.getElementsByTagName('HEAD').item(0).appendChild(style);
     document.documentElement.appendChild(style);
 })();
